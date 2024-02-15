@@ -1,0 +1,11 @@
+ we will create a form where a user will add data to the our mock api Create.jsx
+
+created an action for creating user data in the api within the userDetailSlice.jsx
+
+createUser Async Thunk:
+
+This thunk is responsible for making a POST request to the API endpoint to create a new user.
+It takes the user data as a parameter and dispatches three different actions based on the state of the request: pending, fulfilled, and rejected.
+When the request is pending, it sets the loading state to true.
+If the request is successful (fulfilled), it updates the loading state to false and pushes the newly created user data to the user array in the Redux state.
+If the request fails (rejected), it sets the loading state to false and stores the error payload in the state.

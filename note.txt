@@ -1,0 +1,19 @@
+What's Redux Toolkit?
+
+Redux Toolkit is a library that helps you manage the state of your web application. It simplifies the process of setting up and working with Redux, which is a popular state management library for JavaScript applications.
+
+What's createAsyncThunk?
+
+createAsyncThunk is a function provided by Redux Toolkit. It's used to create special kinds of functions called "thunks" that handle asynchronous logic, like fetching data from a server.
+
+How does it work?
+
+You use createAsyncThunk to make an asynchronous action creator. This action creator is a function that will eventually dispatch other actions. You define what this function does - like fetching data from an API.
+
+Why is it useful?
+
+It simplifies the process of handling asynchronous operations in Redux. With createAsyncThunk, you don't have to worry about dispatching multiple actions for loading, success, and error states manually. Redux Toolkit takes care of that for you, making your code cleaner and easier to maintain.
+
+we used mockapi.io website to create fake api because we are performing crud totally by frontend . so we are using fake api to perform such tasks
+
+The exact prop is no longer needed in React Router version 6, as it is the default behavior. Also, the <Route> component no longer uses component={Home} to assign the component but now uses element={<Contact/>}. 

@@ -1,0 +1,24 @@
+to read the data which we have pushed in an api which is now in redux store 
+we have to get the data from store
+
+ so we will use the useSelector hook provided by the react-redux library. 
+ 
+ This hook allows you to extract data from the Redux store's state.
+
+in userDetailSlice create an action for reading data from api
+
+readUser Async Thunk:
+
+This thunk is responsible for making a GET request to the API endpoint to retrieve user data.
+It doesn't take any parameters (just an empty object) and dispatches the same three actions as createUser: pending, fulfilled, and rejected.
+Similarly, it updates the loading state based on the request status and stores the fetched user data in the user array when successful.
+If the request fails, it handles the error in the same way as createUser.
+
+
+When using createAsyncThunk, the second argument passed to the async function (after the first argument, which represents the payload) is an object containing dispatch, getState, and extra properties
+
+
+In this context, _ is a convention often used to represent an unused parameter. It's a way to indicate that you're not using the first argument passed to the function.
+
+
+use useSelector hook when we need any state from the redux(global) store
